@@ -1,0 +1,350 @@
+/* style.css - Main stylesheet */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  background: #f9f9f9;
+  color: #222;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* scroll-snap-stop: always; */
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #313131;
+  /* background-color: #3d3d3d; */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #fff;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 1rem; */
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+} 
+
+#title {
+  color: #fff;
+}
+
+#title a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#title a:hover {
+  opacity: 0.8;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#contact {
+  color: #000;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+section {
+  box-sizing: border-box;
+  height: 100vh; /* 4rem is the header height */
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content {
+  scroll-snap-align: center;
+  font-size: larger;
+  /* font-family: 'Courier New', Courier, monospace; */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 60px; /* Make room for the footer */
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.padding-top-5 {
+  padding-top: 5vh;
+}
+
+.padding-top-10 {
+  padding-top: 10vh;
+}
+
+.padding-top-15 {
+  padding-top: 15vh;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap; /* Prevents wrapping of flex items */
+}
+
+.flex-right {
+  justify-content: flex-end;
+  margin-left: auto; /* This helps ensure the content is pushed to the right */
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-1-5 {
+  gap: 1.5rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-purple {
+  color: #A1ACDA;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.pt-12 {
+  font-size: 12pt;
+}
+
+.pt-15 {
+  font-size: 15pt;
+}
+
+.pt-20 {
+  font-size: 20pt;
+}
+
+.pt-25 {
+  font-size: 25pt;
+}
+
+.pt-30 {
+  font-size: 30pt;
+}
+
+.pt-50 {
+  font-size: 50pt;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.recursive-regular { /* <regular> is just a placeholder, can be anything */
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Use a value from 300 to 1000 */
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CASL" 0,
+    "CRSV" 0.5,
+    "MONO" 0;
+}
+
+.inter-regular { /* <regular> is just a placeholder, can be anything */
+  /* Use a unique and descriptive class name */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Use a value from 100 to 900 */
+  font-style: normal;
+}
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/* Tab styling */
+.button-group {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  /* margin-right: 1rem; */
+  border: none;
+  border-bottom: 2px solid transparent; /* Add a transparent bottom border by default */
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.tab-chosen {
+  color: #fff; /* White text for the selected tab */
+  border-bottom: 2px solid #fff; /* White bottom border for the selected tab */
+}
+
+.button-group:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white on hover */
+}
+
+#skills-list {
+  min-height: 200px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+#email-tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1000;
+  pointer-events: none; /* So it doesn't interfere with clicks */
+  font-family: 'Recursive', sans-serif;
+}
+
+/* Footer styling */
+footer {
+  padding: 1rem;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #A1ACDA;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}

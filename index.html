@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick T.J. Keat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Patrick+Hand&family=Recursive:wght@300..1000&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b37e3decf3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <a href="#main" class="recursive-regular pt-20 font-bold ml-1"> Derick T.J. Keat </a>
+        </div>
+        <div class="nav">
+            <a href="#main" class="recursive-regular">Home</a>
+            <a href="#about-me" class="recursive-regular">About</a>
+            <a id='contact' href="#contact-me" class="recursive-regular">Contact Me</a>
+        </div>
+    </div>
+
+    <section id="main">
+        <div class="content height-100 width-100">
+            <div class="width-50 padding-top-15">
+                <h1 class="pt-20 recursive-regular my-1">Hi, I'm</h1>
+                <h1 class="shadows-into-light-regular text-purple pt-50 my-1">Derick (or TJ)</h1>
+                <h1 class="pt-20 recursive-regular my-1">An engineering student who</h1>
+                <h1 id="bs-stack" class="shadows-into-light-regular text-purple pt-25 my-1"></h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="">
+        <div class="content flex-right height-100 width-100">
+            <div class="flex-column width-40 mr-3 padding-top-15">
+                <h2 class="shadows-into-light-regular font-bold pt-30 text-white my-1 text-purple">About Me</h2>
+                <p class="text-white recursive-regular pt-12">Junior engineering major, CS addict. I split my time between algorithms, ML, data pipes, and raw software builds. My current grind: a market-data model for the campus research lab, stress-testing trading decisions and fusing code with finance.</p>
+                <div class="flex-row flex-nowrap gap-1">
+                    <button id="languages" class="button-group text-white recursive-regular tab-chosen">LANGUAGES</button>
+                    <button id="libraries" class="button-group text-white recursive-regular">FRAMEWORKS & LIBRARIES</button>
+                    <button id="tools" class="button-group text-white recursive-regular">DEV TOOLS & ENV</button>
+                </div>
+                <div id="skills-list">
+                    <ul class="recursive-regular">
+                        <li class="text-white pt-12">Python</li>
+                        <li class="text-white pt-12">C++</li>
+                        <li class="text-white pt-12">C</li>
+                        <li class="text-white pt-12">Java</li>
+                        <li class="text-white pt-12">HTML+CSS</li>
+                        <li class="text-white pt-12">JavaScript</li>
+                        <li class="text-white pt-12">SQL</li>
+                        <li class="text-white pt-12">LaTeX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <div class="content height-100 width-100">
+            <div class="flex-column width-50 padding-top-5">
+                <h2 class="shadows-into-light-regular font-bold pt-30 text-white mb-1 text-purple">Let's Connect</h2>
+                <p class="recursive-regular mb-1 pt-15">My inbox is always open—new projects, sharp questions, solid advice, or just a simple hello—bring it on. I reply fast and keep it real.</p>
+                <div class="flex-row gap-2 mt-1">
+                    <a target="_blank" href="https://www.linkedin.com/in/tjkeat123/"><i class="fa-brands fa-linkedin fa-2x" style="color:#fff"></i></a>
+                    <a target="_blank" href="https://github.com/tjkeat123"><i class="fa-brands fa-github fa-2x" style="color:#fff"></i></a>
+                    <i id="email-icon" class="fa-solid fa-envelope fa-2x clickable" style="color:#fff"></i>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="flex-row gap-1">
+            <p class="recursive-regular text-white">© 2025 Derick T.J. Keat</p>
+            <p class="recursive-regular text-white">Source code on <a target="_blank" href="https://github.com/tjkeat123">GitHub</a></p>
+        </footer>
+    </section>
+</body>
+</html>
