@@ -59,6 +59,14 @@ h1, h2, h3, h4, h5, h6, p {
   position: sticky;
 }
 
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
 .z-100 {
   z-index: 100;
 }
@@ -105,6 +113,47 @@ section {
   padding-right: 5%;
 }
 
+.profile-image {
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-crop {
+  overflow: hidden;
+  width: 250px; /* Adjusted to match the image size */
+  height: 250px; /* Adjusted to match the image size */
+  border-radius: 10px;
+  position: relative;
+}
+
+.profile-crop img {
+  width: 250%;
+  height: 250%;
+  margin: -100px -200px; /* Center the image in the crop area */
+  object-fit: cover; /* Ensures the image covers the crop area */
+}
+
+.border-0 {
+  border: none;
+}
+
+.border-2 {
+  border: 2px solid #A1ACDA; /* Example border color */
+}
+
+.border-5 {
+  border: 5px solid #A1ACDA; /* Example border color */
+}
+
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.border-radius-30px {
+  border-radius: 30px;
+}
+
 .content {
   scroll-snap-align: center;
   font-size: larger;
@@ -121,6 +170,19 @@ section {
   justify-content: flex-end;
 }
 
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-50-horizontal {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .padding-top-5 {
   padding-top: 5vh;
 }
@@ -133,8 +195,41 @@ section {
   padding-top: 15vh;
 }
 
+.top-20px {
+  top: 20px;
+}
+
 .bottom-0 {
   bottom: 0;
+}
+
+.bottom-20px {
+  bottom: 20px;
+}
+
+.left-50px {
+  left: 50px;
+}
+
+.left-50pc {
+  left: 50%;
+  transform: translateX(-50%); /* Center the element horizontally */
+}
+
+.img-center {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.vertical-center {
+  vertical-align: middle;
 }
 
 .flex-column {
@@ -175,6 +270,26 @@ section {
   gap: 2rem;
 }
 
+.margin-10px {
+  margin: 10px;
+}
+
+.margin-top-20px {
+  margin-top: 20px;
+}
+
+.margin-top-15vh {
+  margin-top: 15vh;
+}
+
+.margin-left-15vh {
+  margin-left: 15vh;
+}
+
+.margin-left-10px {
+  margin-left: 10px;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -200,6 +315,14 @@ section {
   color: #fff;
 }
 
+.text-300 {
+  color: #bbc7e6;
+}
+
+.text-800 {
+  color: #4e5185;
+}
+
 .text-purple {
   color: #A1ACDA;
 }
@@ -208,12 +331,28 @@ section {
   background-color: #000;
 }
 
+.bg-400 {
+  background-color: #a1acda;
+}
+
+.bg-300 {
+  background-color: #bbc7e6;
+}
+
+.bg-800 {
+  background-color: #4e5185;
+}
+
 .pt-12 {
   font-size: 12pt;
 }
 
 .pt-15 {
   font-size: 15pt;
+}
+
+.pt-18 {
+  font-size: 18pt;
 }
 
 .pt-20 {
@@ -266,8 +405,32 @@ section {
   font-style: normal;
 }
 
+.height-350px {
+  height: 350px;
+}
+
+.height-500px {
+  height: 500px;
+}
+
 .height-100 {
   height: 100%;
+}
+
+.width-250px {
+  width: 250px;
+}
+
+.width-300px {
+  width: 300px;
+}
+
+.width-350px {
+  width: 350px;
+}
+
+.width-400px {
+  width: 400px;
 }
 
 .width-40 {
@@ -311,7 +474,7 @@ section {
   cursor: pointer;
 }
 
-#email-tooltip {
+#email-tooltip { /* for javascript */
   position: absolute;
   background-color: #333;
   color: white;
