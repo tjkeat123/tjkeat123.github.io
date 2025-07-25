@@ -4,7 +4,7 @@ function About() {
   const [activeTab, setActiveTab] = useState("languages")
 
   return (
-    <section id="about" className="h-screen snap-start flex items-center justify-end pr-20 bg-mine-shaft-950">
+    <section id="about" className="h-screen snap-start snap-always scroll-smooth flex items-center justify-end pr-20 bg-mine-shaft-950">
       <div className="flex flex-col w-2/5">
         <h1 className="text-5xl font-handwritten text-wistful-400 mb-4">About Me</h1>
         <p className="text-white text-lg font-body">

@@ -17,7 +17,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact-me" className="h-screen snap-start flex flex-col justify-between pl-20 bg-mine-shaft-950">
+    <section id="contact-me" className="h-screen snap-start snap-always scroll-smooth flex flex-col justify-between pl-20 bg-mine-shaft-950">
       <div className="flex flex-col w-2/5 flex-grow justify-center">
         <h1 className="font-handwritten text-5xl text-wistful-400 mb-4">Let's Connect</h1>
         <p className="font-body text-white text-xl">My inbox is always open -- whether it's a fresh project, thoughtful question, insightful advice, or just a quick hello. I respond quickly and keep it honest.</p>
