@@ -4,13 +4,13 @@ function About() {
   const [activeTab, setActiveTab] = useState("languages")
 
   return (
-    <section id="about" className="h-screen snap-start snap-always scroll-smooth flex items-center justify-end pr-20 bg-mine-shaft-950">
-      <div className="flex flex-col w-1/2 mr-8">
-        <h1 className="text-5xl font-handwritten text-wistful-400 mb-4">About Me</h1>
-        <p className="text-white text-lg font-body">
+    <section id="about" className="h-screen snap-start snap-always scroll-smooth flex items-center md:justify-end justify-center bg-mine-shaft-950">
+      <div className="flex flex-col w-full md:w-1/2 md:mr-8 pr-20 pl-20 md:pl-0">
+        <h1 className="text-5xl font-handwritten text-wistful-400 mb-4 text-center md:text-left">About Me</h1>
+        <p className="text-white text-lg font-body text-center md:text-left">
           Rising senior engineering major, CS addict. I split my time between algorithms, ML, data pipes, and raw software builds. My current grind: a market-data model at the campus research lab -- pushing trading strategies to the edge and blending code with finance.
         </p>
-        <div className="flex flex-row gap-10 mb-4 mt-6">
+        <div className="flex flex-row gap-10 mb-6 mt-10 md:mb-4 md:mt-6 justify-center md:justify-start">
           <button 
             className={`text-sm font-body hover:border-b-2 text-white px-2 ${
               activeTab === "languages" ? "border-b-2" : ""

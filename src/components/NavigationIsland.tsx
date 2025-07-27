@@ -13,7 +13,7 @@ function NavigationIsland() {
   }
 
   return (
-    <div className="fixed flex flex-row bottom-10 md:bottom-5 left-1/2 transform -translate-x-1/2 z-10 bg-white rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300 shadow-lg">
+    <div className="fixed flex flex-row bottom-28 md:bottom-5 left-1/2 transform -translate-x-1/2 z-10 bg-white rounded-full opacity-50 hover:opacity-100 transition-opacity duration-300 shadow-lg">
       {navElement({ icon: faHouse, text: "Home", href: "#hero" })}
       <div className="w-px h-6 bg-gray-300 self-center"></div>
       {navElement({ icon: faUser, text: "About", href: "#about" })}

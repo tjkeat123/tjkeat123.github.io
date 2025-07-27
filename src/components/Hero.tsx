@@ -4,8 +4,8 @@ function Hero() {
 
   return (
     <section id="hero" className="h-screen snap-start snap-always scroll-smooth flex items-center pl-20 bg-mine-shaft-950">
-      <div className="flex flex-col w-3/4">
-        <h1 className="text-2xl text-white font-body leading-relaxed">Hey, I'm
+      <div className="flex flex-col w-full md:w-3/4 pr-20 md:pr-0">
+        <h1 className="text-2xl text-white font-body leading-relaxed text-center md:text-left">Hey, I'm
           <br/>
           <span className="text-wistful-400 text-6xl font-handwritten leading-tight">Derick (or TJ)</span>
           <br/>
