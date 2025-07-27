@@ -4,7 +4,7 @@ function SideBullet() {
   const currentSection = useScrollSpy()
 
   return (
-    <div className="absolute right-10 flex flex-col justify-center h-full z-10">
+    <div className="absolute right-5 bottom-10 md:bottom-5 flex flex-col justify-end h-full z-10">
         <ul className="flex flex-col gap-4 list-disc list-inside">
             <li 
               className="text-white text-2xl transition-colors" 
