@@ -10,7 +10,7 @@ function About() {
         <p className="text-white text-lg font-body">
           Rising senior engineering major, CS addict. I split my time between algorithms, ML, data pipes, and raw software builds. My current grind: a market-data model at the campus research lab -- pushing trading strategies to the edge and blending code with finance.
         </p>
-        <div className="flex flex-row gap-10 my-4">
+        <div className="flex flex-row gap-10 mb-4 mt-6">
           <button 
             className={`text-sm font-body hover:border-b-2 text-white px-2 ${
               activeTab === "languages" ? "border-b-2" : ""
